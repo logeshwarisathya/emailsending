@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" cellpadding="5px" cellspacing="0px">
+        <tr>
+        <th>studentid</th>
+        <th>NAME</th>
+        <th>TAMIL</th>
+        <th>ENGLISH</th>
+        <th>MATHS</th>
+        <th>SCIENCE</th>
+        <th>SOCIAL</th>
+    </tr>
+        {% for marks in data %}
+        <td>{{marks.id}}</td>
+        <td>{{marks.id}name}</td>
+        <td>{{marks.tamil}}</td>
+        <td>{{marks.english}}</td>
+        <td>{{marks.maths}}</td>
+        <td>{{marks.science}}</td>
+        <td>{{marks.social}}</td>
+
+        {% endfor %}
+    </table>
+</body>
+</html>
